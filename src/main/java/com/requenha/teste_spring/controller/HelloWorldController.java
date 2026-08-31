@@ -10,7 +10,7 @@ public class HelloWorldController {
 	
 	@GetMapping("/hello/{nome}/{idade}")
     public HelloWorldResposta helloWorld(@PathVariable String nome, @PathVariable int idade) {
-    	return new HelloWorldResposta("Hello, " + nome + " you are " + idade + " years old.");
+    	return new HelloWorldResposta("Hello, " + nome + " you are " + idade + " years old.", nome, idade);
     }
 	
 	@GetMapping("/goodbye")
