@@ -1,15 +1,13 @@
 package com.requenha.teste_spring.dto;
 
-public class HelloWorldResposta {
+public class HelloWorldRequisicao {
 	
-	private String mensagem;
 	private String nome;
 	private int idade;
+
+	public HelloWorldRequisicao() {}
 	
-	public HelloWorldResposta() {}
-	
-	public HelloWorldResposta(String mensagem, String nome, int idade) {
-		this.mensagem = mensagem;
+	public HelloWorldRequisicao(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
 	}
@@ -30,11 +28,4 @@ public class HelloWorldResposta {
 		this.idade = idade;
 	}
 	
-	public String getMensagem() {
-		return mensagem;
-	}
-	
-	public void setMensagem (String mensagem) {
-		this.mensagem = mensagem;
-	}
 }
